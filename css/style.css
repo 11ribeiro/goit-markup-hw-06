@@ -674,14 +674,13 @@ address {
   width: 100%;
   height: 40px;
   padding-left: 38px;
-  margin-bottom: 8px;
 
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
 
-  transition: border-color 250ms var(--animation-hover);
+  transition: border-color var(--animation-hover);
 }
 .modal-field-input:focus,
 .modal-field-input:active,
@@ -694,7 +693,7 @@ address {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  transition: fill 250ms var(--animation-hover);
+  transition: fill var(--animation-hover);
 }
 .modal-field-input:focus + .modal-field-icon,
 .modal-field-input:active + .modal-field-icon {
@@ -716,7 +715,7 @@ address {
   padding: 8px 16px;
   outline: transparent;
   resize: none;
-  transition: border-color 250ms var(--animation-hover);
+  transition: border-color var(--animation-hover);
 }
 .comment-field-input:focus {
   border-color: var(--color-blue);
@@ -734,13 +733,14 @@ address {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-right: 8px;
   fill: transparent;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  transition: background-color 250ms var(--animation-hover),
-    border 250ms var(--animation-hover), fill 250ms var(--animation-hover);
+  transition: background-color var(--animation-hover),
+    border var(--animation-hover), fill var(--animation-hover);
 }
 .checkbox-input:checked + .checkbox-label > .label-link {
   background-color: var(--color-hover);
@@ -750,6 +750,8 @@ address {
 .input-link {
   color: var(--color-blue);
   text-decoration: underline;
+
+  font-size: 12px;
 }
 .modal-secondary-btn {
   display: block;
